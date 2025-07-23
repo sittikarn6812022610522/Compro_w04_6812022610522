@@ -2,14 +2,14 @@
 
 int main() {
     //ประกาศตัวแปรต่างๆ
-    char nameInitial = 'S';
-    int age = 19;
-    float weight = 50;
-    char gender[] = "Male";
+    char nameInitial = 'S';                          //ใช้ char ในการเก็บอักษรตัวแรกของชื่อเพราะอักษรตัวแรกของชื่อเป็นอักษรตัวเดียว->โจทย์กำหนดให้เก็บตัวอักษรตัวแรกของชื่อนศ.
+    int age = 19;                                    //ใช้ int ในการเก็บอายุเพราะเป็นเลขจำนวนเต็ม->โจทย์กำหนดให้เก็บอายุ
+    float weight = 60.5;                             //ใช้ float ในการเก็บน้ำหนักเพราะเป็นเลขทศนิยม->โจทย์กำหนดให้เก็บน้ำหนัก(ทศนิยม 1 ตำแหน่ง)
+    char gender[] = "Male";                          //ใช้ char [] ในการเก็บเพศเพราะเพศเป็นตัวอักษรหลายตัว->โจทย์กำหนดให้เก็บเพศ(male/female)
     //แสดงผลค่าตัวแปรต่างๆ
-    printf("Name Initial : %c\n",nameInitial);
-    printf("Age: %d\n", age);
-    printf("Weight: %.1f\n",weight);
-    printf("Gender : %s\n" , gender);
+    printf("Name Initial : %c\n",nameInitial);       //รหัส %c แสดงตัวอักษร S
+    printf("Age: %d\n", age);                        //รหัส %d แสดงจำนวนเต็ม 19
+    printf("Weight: %.1f\n",weight);                 //รหัส %.1f แสดงจำนวนจริงและทศนิยม1ตำแหน่ง 60.5
+    printf("Gender : %s\n" , gender);                //รหัส %s แสดงข้อความ Male
     return 0;
 }
